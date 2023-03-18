@@ -18,13 +18,15 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 @app.route('/<value>')
 @cross_origin()
 def hello_world(value):
-   # r = request.args.get('value')
+    if value == "favicon.ico":
+        return ""
     recommendations = recommendation(value)
     a = str(recommendations).split('\n')
     a.pop(len(a)-1)
     d = []
     for i in range(len(a)):
-        d.append(a[i][1:(len(a[i]))].strip())
+        text = a[i].split(' ', 1)[1].strip()
+        d.append(text)
     return d
 
 
