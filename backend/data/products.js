@@ -1,9 +1,7 @@
-const products = [
-  {
+const products = [{
     name: 'Airpods Wireless Bluetooth Headphones',
     image: '/images/airpods.jpg',
-    description:
-      'Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working',
+    description: 'Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working',
     brand: 'Apple',
     category: 'Electronics',
     price: 89.99,
@@ -14,8 +12,7 @@ const products = [
   {
     name: 'iPhone 11 Pro 256GB Memory',
     image: '/images/phone.jpg',
-    description:
-      'Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life',
+    description: 'Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life',
     brand: 'Apple',
     category: 'Electronics',
     price: 599.99,
@@ -26,8 +23,7 @@ const products = [
   {
     name: 'Cannon EOS 80D DSLR Camera',
     image: '/images/camera.jpg',
-    description:
-      'Characterized by versatile imaging specs, the Canon EOS 80D further clarifies itself using a pair of robust focusing systems and an intuitive design',
+    description: 'Characterized by versatile imaging specs, the Canon EOS 80D further clarifies itself using a pair of robust focusing systems and an intuitive design',
     brand: 'Cannon',
     category: 'Electronics',
     price: 929.99,
@@ -38,8 +34,7 @@ const products = [
   {
     name: 'Sony Playstation 4 Pro White Version',
     image: '/images/playstation.jpg',
-    description:
-      'The ultimate home entertainment center starts with PlayStation. Whether you are into gaming, HD movies, television, music',
+    description: 'The ultimate home entertainment center starts with PlayStation. Whether you are into gaming, HD movies, television, music',
     brand: 'Sony',
     category: 'Electronics',
     price: 399.99,
@@ -50,8 +45,7 @@ const products = [
   {
     name: 'Logitech G-Series Gaming Mouse',
     image: '/images/mouse.jpg',
-    description:
-      'Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience',
+    description: 'Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience',
     brand: 'Logitech',
     category: 'Electronics',
     price: 49.99,
@@ -62,8 +56,7 @@ const products = [
   {
     name: 'Amazon Echo Dot 3rd Generation',
     image: '/images/alexa.jpg',
-    description:
-      'Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space',
+    description: 'Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space',
     brand: 'Amazon',
     category: 'Electronics',
     price: 29.99,
@@ -74,8 +67,7 @@ const products = [
   {
     name: 'Sony Noise Cancelling Headphones',
     image: '',
-    description:
-      'These Sony headphones feature industry-leading noise cancellation technology, delivering a truly immersive listening experience. The headphones are wireless, with up to 30 hours of battery life, and feature touch controls for easy operation.',
+    description: 'These Sony headphones feature industry-leading noise cancellation technology, delivering a truly immersive listening experience. The headphones are wireless, with up to 30 hours of battery life, and feature touch controls for easy operation.',
     brand: 'Local Brand',
     category: 'Electronics',
     price: 99.99,
@@ -86,8 +78,7 @@ const products = [
   {
     name: 'Apple iPhone 13',
     image: '',
-    description:
-      'The iPhone 13 features a stunning Super Retina XDR display, A15 Bionic chip, and 5G connectivity. The dual-camera system takes stunning photos and videos, and the device is available in a range of colors and storage capacities.',
+    description: 'The iPhone 13 features a stunning Super Retina XDR display, A15 Bionic chip, and 5G connectivity. The dual-camera system takes stunning photos and videos, and the device is available in a range of colors and storage capacities.',
     brand: 'Local Brand',
     category: 'Electronics',
     price: 99.99,
@@ -98,8 +89,7 @@ const products = [
   {
     name: 'Samsung 4K Smart TV',
     image: '',
-    description:
-      'This Samsung 4K Smart TV features a crystal clear 65-inch display, with rich colors and deep blacks. The TV is equipped with built-in Wi-Fi and support for popular streaming services, such as Netflix and Hulu. The TV also features voice control for easy operation.',
+    description: 'This Samsung 4K Smart TV features a crystal clear 65-inch display, with rich colors and deep blacks. The TV is equipped with built-in Wi-Fi and support for popular streaming services, such as Netflix and Hulu. The TV also features voice control for easy operation.',
     brand: 'Local Brand',
     category: 'Electronics',
     price: 99.99,
@@ -110,8 +100,7 @@ const products = [
   {
     name: 'Bose QuietComfort Earbuds',
     image: '',
-    description:
-      'These wireless earbuds from Bose feature noise cancellation technology and a comfortable, secure fit. The earbuds provide up to 6 hours of battery life and come with a charging case for on-the-go charging.',
+    description: 'These wireless earbuds from Bose feature noise cancellation technology and a comfortable, secure fit. The earbuds provide up to 6 hours of battery life and come with a charging case for on-the-go charging.',
     brand: 'Local Brand',
     category: 'Electronics',
     price: 99.99,
@@ -120,10 +109,9 @@ const products = [
     numReviews: 0,
   },
   {
-    name: 'Amazon Echo Dot (4th Gen)',
+    name: 'Amazon Echo Dot 4th Gen',
     image: '',
-    description:
-      'The Amazon Echo Dot is a compact smart speaker with Alexa built-in. The speaker delivers clear, balanced sound, and can be controlled with your voice, the Alexa app, or physical buttons.',
+    description: 'The Amazon Echo Dot is a compact smart speaker with Alexa built-in. The speaker delivers clear, balanced sound, and can be controlled with your voice, the Alexa app, or physical buttons.',
     brand: 'Local Brand',
     category: 'Electronics',
     price: 99.99,
@@ -134,8 +122,7 @@ const products = [
   {
     name: 'GoPro HERO10 Black',
     image: '',
-    description:
-      'The GoPro HERO10 Black is a powerful action camera with 5.3K video and 23MP photos. The camera features HyperSmooth 4.0 video stabilization and can record up to 240 frames per second for slow-motion footage.',
+    description: 'The GoPro HERO10 Black is a powerful action camera with 5.3K video and 23MP photos. The camera features HyperSmooth 4.0 video stabilization and can record up to 240 frames per second for slow-motion footage.',
     brand: 'Local Brand',
     category: 'Electronics',
     price: 99.99,
@@ -146,8 +133,7 @@ const products = [
   {
     name: 'DJI Mavic Air 2S',
     image: '',
-    description:
-      'The DJI Mavic Air 2S is a compact drone with a 1-inch CMOS sensor and 5.4K video. The drone can fly for up to 31 minutes and features obstacle avoidance sensors for safe flying.',
+    description: 'The DJI Mavic Air 2S is a compact drone with a 1-inch CMOS sensor and 5.4K video. The drone can fly for up to 31 minutes and features obstacle avoidance sensors for safe flying.',
     brand: 'Local Brand',
     category: 'Electronics',
     price: 99.99,
@@ -158,8 +144,7 @@ const products = [
   {
     name: 'Samsung Galaxy Watch4 Classic',
     image: '',
-    description:
-      'The Samsung Galaxy Watch4 Classic is a stylish smartwatch with a rotating bezel and a range of health tracking features. The watch can track your sleep, heart rate, and stress levels, and is compatible with a range of Android apps.',
+    description: 'The Samsung Galaxy Watch4 Classic is a stylish smartwatch with a rotating bezel and a range of health tracking features. The watch can track your sleep, heart rate, and stress levels, and is compatible with a range of Android apps.',
     brand: 'Local Brand',
     category: 'Electronics',
     price: 99.99,
@@ -168,10 +153,9 @@ const products = [
     numReviews: 0,
   },
   {
-    name: 'Apple iPad Pro (5th Gen)',
+    name: 'Apple iPad Pro 5th Gen',
     image: '',
-    description:
-      'The Apple iPad Pro (5th Gen) is a powerful tablet with a Liquid Retina XDR display and the A14 Bionic chip. The tablet supports the Apple Pencil and Magic Keyboard, and features 5G connectivity for fast internet speeds.',
+    description: 'The Apple iPad Pro (5th Gen) is a powerful tablet with a Liquid Retina XDR display and the A14 Bionic chip. The tablet supports the Apple Pencil and Magic Keyboard, and features 5G connectivity for fast internet speeds.',
     brand: 'Local Brand',
     category: 'Electronics',
     price: 99.99,
@@ -182,8 +166,7 @@ const products = [
   {
     name: 'Sony Alpha 7 III',
     image: '',
-    description:
-      'The Sony Alpha 7 III is a full-frame mirrorless camera with a 24.2MP sensor and 4K video. The camera features 5-axis image stabilization and a fast autofocus system for capturing stunning photos and videos.',
+    description: 'The Sony Alpha 7 III is a full-frame mirrorless camera with a 24.2MP sensor and 4K video. The camera features 5-axis image stabilization and a fast autofocus system for capturing stunning photos and videos.',
     brand: 'Local Brand',
     category: 'Electronics',
     price: 99.99,
@@ -194,8 +177,7 @@ const products = [
   {
     name: 'LG CX Series 4K OLED TV',
     image: '',
-    description:
-      "This LG 4K OLED TV features a stunning 65-inch display with rich, vibrant colors. The TV supports HDR and Dolby Vision for an immersive viewing experience, and features LG's WebOS platform for easy access to your favorite streaming services.",
+    description: "This LG 4K OLED TV features a stunning 65-inch display with rich, vibrant colors. The TV supports HDR and Dolby Vision for an immersive viewing experience, and features LG's WebOS platform for easy access to your favorite streaming services.",
     brand: 'Local Brand',
     category: 'Electronics',
     price: 99.99,
@@ -206,8 +188,7 @@ const products = [
   {
     name: 'Samsung Galaxy S21 Ultra 5G',
     image: '',
-    description:
-      'The Samsung Galaxy S21 Ultra 5G is a powerful smartphone with a 6.8-inch AMOLED display and 5G connectivity. The phone features a quad camera setup with up to 100x zoom, and is powered by the Exynos 2100 or Snapdragon 888 processor depending on the region.',
+    description: 'The Samsung Galaxy S21 Ultra 5G is a powerful smartphone with a 6.8-inch AMOLED display and 5G connectivity. The phone features a quad camera setup with up to 100x zoom, and is powered by the Exynos 2100 or Snapdragon 888 processor depending on the region.',
     brand: 'Local Brand',
     category: 'Electronics',
     price: 99.99,
@@ -218,8 +199,7 @@ const products = [
   {
     name: 'Microsoft Surface Pro 8',
     image: '',
-    description:
-      'The Microsoft Surface Pro 8 is a versatile tablet/laptop hybrid with a 13-inch PixelSense display and a range of connectivity options. The device is powered by the 11th Gen Intel Core processor, and supports the Surface Pen and other accessories.',
+    description: 'The Microsoft Surface Pro 8 is a versatile tablet/laptop hybrid with a 13-inch PixelSense display and a range of connectivity options. The device is powered by the 11th Gen Intel Core processor, and supports the Surface Pen and other accessories.',
     brand: 'Local Brand',
     category: 'Electronics',
     price: 99.99,
@@ -230,8 +210,7 @@ const products = [
   {
     name: 'Sony PlayStation 5',
     image: '',
-    description:
-      'The Sony PlayStation 5 is a next-gen gaming console with lightning-fast load times and stunning graphics. The console features a custom AMD Zen 2 processor and RDNA 2 graphics, and supports a range of popular games and streaming services.',
+    description: 'The Sony PlayStation 5 is a next-gen gaming console with lightning-fast load times and stunning graphics. The console features a custom AMD Zen 2 processor and RDNA 2 graphics, and supports a range of popular games and streaming services.',
     brand: 'Local Brand',
     category: 'Electronics',
     price: 99.99,
@@ -240,10 +219,9 @@ const products = [
     numReviews: 0,
   },
   {
-    name: 'Bose SoundLink Revolve+ Bluetooth Speaker',
+    name: 'Bose SoundLink Revolve Bluetooth Speaker',
     image: '',
-    description:
-      'The Bose SoundLink Revolve+ is a portable Bluetooth speaker with 360-degree sound and up to 16 hours of battery life. The speaker is water-resistant and features voice prompts for easy operation.',
+    description: 'The Bose SoundLink Revolve+ is a portable Bluetooth speaker with 360-degree sound and up to 16 hours of battery life. The speaker is water-resistant and features voice prompts for easy operation.',
     brand: 'Local Brand',
     category: 'Electronics',
     price: 99.99,
@@ -252,10 +230,9 @@ const products = [
     numReviews: 0,
   },
   {
-    name: 'Apple MacBook Pro (2021)',
+    name: 'Apple MacBook Pro 2021',
     image: '',
-    description:
-      'The Apple MacBook Pro (2021) is a powerful laptop with the M1 Pro or M1 Max chip and up to 10-core CPU. The laptop features a stunning 16-inch Retina display with True Tone technology, and up to 32GB of unified memory for seamless multitasking.',
+    description: 'The Apple MacBook Pro (2021) is a powerful laptop with the M1 Pro or M1 Max chip and up to 10-core CPU. The laptop features a stunning 16-inch Retina display with True Tone technology, and up to 32GB of unified memory for seamless multitasking.',
     brand: 'Local Brand',
     category: 'Electronics',
     price: 99.99,
@@ -266,8 +243,7 @@ const products = [
   {
     name: 'Canon EOS R6',
     image: '',
-    description:
-      'The Canon EOS R6 is a full-frame mirrorless camera with a 20.1MP CMOS sensor and 4K video. The camera features in-body image stabilization and dual pixel autofocus, and is compatible with a range of Canon RF lenses.',
+    description: 'The Canon EOS R6 is a full-frame mirrorless camera with a 20.1MP CMOS sensor and 4K video. The camera features in-body image stabilization and dual pixel autofocus, and is compatible with a range of Canon RF lenses.',
     brand: 'Local Brand',
     category: 'Electronics',
     price: 99.99,
@@ -278,8 +254,7 @@ const products = [
   {
     name: 'LG Gram 17',
     image: '',
-    description:
-      'The LG Gram 17 is an ultra-lightweight laptop with a 17-inch WQXGA display and up to 19.5 hours of battery life. The laptop features the 11th Gen Intel Core processor and Thunderbolt 4 connectivity, and weighs just 2.98 pounds.',
+    description: 'The LG Gram 17 is an ultra-lightweight laptop with a 17-inch WQXGA display and up to 19.5 hours of battery life. The laptop features the 11th Gen Intel Core processor and Thunderbolt 4 connectivity, and weighs just 2.98 pounds.',
     brand: 'Local Brand',
     category: 'Electronics',
     price: 99.99,
@@ -290,8 +265,7 @@ const products = [
   {
     name: 'Fitbit Charge 5',
     image: '',
-    description:
-      'The Fitbit Charge 5 is a fitness tracker with a range of health and wellness features, including EDA stress management and skin temperature tracking. The tracker is water-resistant and features up to 7 days of battery life.',
+    description: 'The Fitbit Charge 5 is a fitness tracker with a range of health and wellness features, including EDA stress management and skin temperature tracking. The tracker is water-resistant and features up to 7 days of battery life.',
     brand: 'Local Brand',
     category: 'Electronics',
     price: 99.99,
@@ -302,8 +276,7 @@ const products = [
   {
     name: 'Samsung QN90A Neo QLED TV',
     image: '',
-    description:
-      'The Samsung QN90A is a top-of-the-line Neo QLED TV with a 4K resolution and 120Hz refresh rate. The TV features quantum dot technology for vibrant colors, and is powered by the Quantum Processor 4K for seamless upscaling and optimization of content.',
+    description: 'The Samsung QN90A is a top-of-the-line Neo QLED TV with a 4K resolution and 120Hz refresh rate. The TV features quantum dot technology for vibrant colors, and is powered by the Quantum Processor 4K for seamless upscaling and optimization of content.',
     brand: 'Local Brand',
     category: 'Electronics',
     price: 99.99,
@@ -312,10 +285,9 @@ const products = [
     numReviews: 0,
   },
   {
-    name: 'Dell XPS 13 (2022)',
+    name: 'Dell XPS 13 2022',
     image: '',
-    description:
-      'The Dell XPS 13 (2022) is a slim and stylish laptop with the 11th Gen Intel Core processor and up to 32GB of RAM. The laptop features a 13.4-inch 4K display with Dolby Vision, and weighs just 2.64 pounds.',
+    description: 'The Dell XPS 13 (2022) is a slim and stylish laptop with the 11th Gen Intel Core processor and up to 32GB of RAM. The laptop features a 13.4-inch 4K display with Dolby Vision, and weighs just 2.64 pounds.',
     brand: 'Local Brand',
     category: 'Electronics',
     price: 99.99,
@@ -326,8 +298,7 @@ const products = [
   {
     name: 'Apple Watch Series 7',
     image: '',
-    description:
-      'The Apple Watch Series 7 is a smartwatch with a range of health and fitness features, including blood oxygen and ECG monitoring. The watch features an always-on Retina display and up to 18 hours of battery life, and is compatible with a range of bands and accessories.',
+    description: 'The Apple Watch Series 7 is a smartwatch with a range of health and fitness features, including blood oxygen and ECG monitoring. The watch features an always-on Retina display and up to 18 hours of battery life, and is compatible with a range of bands and accessories.',
     brand: 'Local Brand',
     category: 'Electronics',
     price: 99.99,
@@ -338,8 +309,7 @@ const products = [
   {
     name: 'Sony A7S III',
     image: '',
-    description:
-      'The Sony A7S III is a full-frame mirrorless camera with a 12.1MP sensor and 4K/120p video. The camera features advanced autofocus and image stabilization, and is compatible with a range of Sony E-mount lenses.',
+    description: 'The Sony A7S III is a full-frame mirrorless camera with a 12.1MP sensor and 4K/120p video. The camera features advanced autofocus and image stabilization, and is compatible with a range of Sony E-mount lenses.',
     brand: 'Local Brand',
     category: 'Electronics',
     price: 99.99,
@@ -350,8 +320,7 @@ const products = [
   {
     name: 'Microsoft Xbox Series X',
     image: '',
-    description:
-      'The Microsoft Xbox Series X is a next-gen gaming console with 4K gaming and up to 120fps. The console features a custom AMD Zen 2 processor and RDNA 2 graphics, and supports a range of popular games and streaming services.',
+    description: 'The Microsoft Xbox Series X is a next-gen gaming console with 4K gaming and up to 120fps. The console features a custom AMD Zen 2 processor and RDNA 2 graphics, and supports a range of popular games and streaming services.',
     brand: 'Local Brand',
     category: 'Electronics',
     price: 99.99,

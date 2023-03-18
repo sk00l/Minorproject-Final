@@ -1,9 +1,10 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { LinkContainer } from 'react-router-bootstrap'
-import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
+import { Navbar, Nav, Container, NavDropdown, Image } from 'react-bootstrap'
 import SearchBox from './SearchBox'
 import { logout } from '../actions/userActions'
+import Logo from "../assets/Logo.png"
 
 const Header = () => {
   const dispatch = useDispatch()
@@ -20,7 +21,9 @@ const Header = () => {
       <Navbar className='navbar navbar-expand-lg navbar-light bg-light'>
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand href='/'>Online Shop </Navbar.Brand>
+            <Navbar.Brand href='/'>
+            <Image src={Logo} alt='ShopMandu' width={150}/>
+            </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>

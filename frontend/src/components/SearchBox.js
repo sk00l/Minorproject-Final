@@ -1,34 +1,34 @@
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { Form, Button } from 'react-bootstrap'
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { Form, Button } from "react-bootstrap";
 
 const SearchBox = () => {
-  const navigate = useNavigate()
-  const [keyword, setKeyword] = useState('')
+  const navigate = useNavigate();
+  const [keyword, setKeyword] = useState("");
 
   const submitHandler = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     if (keyword.trim()) {
-      navigate(`/search/${keyword}`)
+      navigate(`/search/${keyword}`);
     } else {
-      navigate('/')
+      navigate("/");
     }
-  }
+  };
 
   return (
-    <Form onSubmit={submitHandler} inline='true' className='d-flex'>
+    <Form onSubmit={submitHandler} inline="true" className="d-flex">
       <Form.Control
-        type='text'
-        name='q'
+        type="text"
+        name="q"
         onChange={(e) => setKeyword(e.target.value)}
-        placeholder='Search Products...'
-        className='p-sm-2'
+        placeholder="Search Products..."
+        className="p-sm-2"
       ></Form.Control>
-      <Button type='submit' variant='outline-success' className='ms-2'>
+      <Button type="submit" variant="outline-success" className="ms-2">
         Search
       </Button>
     </Form>
-  )
-}
+  );
+};
 
-export default SearchBox
+export default SearchBox;
