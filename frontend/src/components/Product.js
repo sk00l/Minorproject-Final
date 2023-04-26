@@ -4,6 +4,7 @@ import { Card } from 'react-bootstrap'
 import Rating from './Rating'
 
 const Product = ({ product }) => {
+  const convertedPrice = Math.round((product.price * 130) / 100) * 100
   console.log({ product })
   return (
     <Card className='my-3 p-3 rounded'>
@@ -25,7 +26,7 @@ const Product = ({ product }) => {
           />
         </Card.Text>
 
-        <Card.Text as='h3'>${product?.price}</Card.Text>
+        <Card.Text as='h3'>Rs {convertedPrice}</Card.Text>
       </Card.Body>
     </Card>
   )

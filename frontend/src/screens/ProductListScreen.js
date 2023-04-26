@@ -41,6 +41,10 @@ const ProductListScreen = () => {
   const userLogin = useSelector((state) => state.userLogin)
   const { userInfo } = userLogin
 
+  const convertPrice = (price) => {
+    return Math.round((price * 130) / 100) * 100
+  }
+
   useEffect(() => {
     dispatch({ type: PRODUCT_CREATE_RESET })
 
@@ -111,7 +115,7 @@ const ProductListScreen = () => {
                 <tr key={product._id}>
                   <td>{product._id}</td>
                   <td>{product.name}</td>
-                  <td>${product.price}</td>
+                  <td>Rs {convertPrice(product.price)}</td>
                   <td>{product.category}</td>
                   <td>{product.brand}</td>
                   <td>

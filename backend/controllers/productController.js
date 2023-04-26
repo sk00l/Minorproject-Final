@@ -5,31 +5,31 @@ import Product from '../models/productModel.js'
 // @route   GET /api/products
 // @access  Public
 const getProducts = asyncHandler(async (req, res) => {
-  const pageSize = 10
+  const pageSize = 12
   const page = Number(req.query.pageNumber) || 1
 
-  const keyword = req.query.keyword ?
-    {
-      name: {
-        $regex: req.query.keyword,
-        $options: 'i',
-      },
-    } :
-    {}
+  const keyword = req.query.keyword
+    ? {
+        name: {
+          $regex: req.query.keyword,
+          $options: 'i',
+        },
+      }
+    : {}
 
   const count = await Product.count({
-    ...keyword
+    ...keyword,
   })
   const products = await Product.find({
-      ...keyword
-    })
+    ...keyword,
+  })
     .limit(pageSize)
     .skip(pageSize * (page - 1))
 
   res.json({
     products,
     page,
-    pages: Math.ceil(count / pageSize)
+    pages: Math.ceil(count / pageSize),
   })
 })
 
@@ -56,7 +56,7 @@ const deleteProduct = asyncHandler(async (req, res) => {
   if (product) {
     await product.remove()
     res.json({
-      message: 'Product removed'
+      message: 'Product removed',
     })
   } else {
     res.status(404)
@@ -88,16 +88,8 @@ const createProduct = asyncHandler(async (req, res) => {
 // @route   PUT /api/products/:id
 // @access  Private/Admin
 const updateProduct = asyncHandler(async (req, res) => {
-  const {
-    name,
-    price,
-    description,
-    image,
-    brand,
-    category,
-    countInStock
-  } =
-  req.body
+  const { name, price, description, image, brand, category, countInStock } =
+    req.body
 
   const product = await Product.findById(req.params.id)
 
@@ -122,10 +114,7 @@ const updateProduct = asyncHandler(async (req, res) => {
 // @route   POST /api/products/:id/reviews
 // @access  Private
 const createProductReview = asyncHandler(async (req, res) => {
-  const {
-    rating,
-    comment
-  } = req.body
+  const { rating, comment } = req.body
 
   const product = await Product.findById(req.params.id)
 
@@ -156,7 +145,7 @@ const createProductReview = asyncHandler(async (req, res) => {
 
     await product.save()
     res.status(201).json({
-      message: 'Review added'
+      message: 'Review added',
     })
   } else {
     res.status(404)
@@ -168,9 +157,11 @@ const createProductReview = asyncHandler(async (req, res) => {
 // @route   GET /api/products/top
 // @access  Public
 const getTopProducts = asyncHandler(async (req, res) => {
-  const products = await Product.find({}).sort({
-    rating: -1
-  }).limit(3)
+  const products = await Product.find({})
+    .sort({
+      rating: -1,
+    })
+    .limit(3)
 
   res.json(products)
 })

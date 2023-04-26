@@ -36,6 +36,10 @@ const ProductScreen = () => {
     error: errorProductReview,
   } = productReviewCreate
 
+  const convertPrice = (price) => {
+    return Math.round((price * 130) / 100) * 100
+  }
+
   useEffect(() => {
     window.scrollTo(0, 0)
     if (successProductReview) {
@@ -88,7 +92,9 @@ const ProductScreen = () => {
                     text={`${product.numReviews} reviews`}
                   />
                 </ListGroup.Item>
-                <ListGroup.Item>Price: Rs{product.price}</ListGroup.Item>
+                <ListGroup.Item>
+                  Price: Rs {convertPrice(product.price)}
+                </ListGroup.Item>
                 <ListGroup.Item>
                   Description: {product.description}
                 </ListGroup.Item>
@@ -101,7 +107,7 @@ const ProductScreen = () => {
                     <Row>
                       <Col>Price:</Col>
                       <Col>
-                        <strong>${product.price}</strong>
+                        <strong>Rs {convertPrice(product.price)}</strong>
                       </Col>
                     </Row>
                   </ListGroup.Item>
@@ -179,6 +185,7 @@ const ProductScreen = () => {
                       <Form.Group controlId='rating'>
                         <Form.Label>Rating</Form.Label>
                         <Form.Control
+                          className='my-2'
                           as='select'
                           value={rating}
                           onChange={(e) => setRating(e.target.value)}
@@ -194,6 +201,7 @@ const ProductScreen = () => {
                       <Form.Group controlId='comment'>
                         <Form.Label>Comment</Form.Label>
                         <Form.Control
+                          className='my-2'
                           as='textarea'
                           row='3'
                           value={comment}
@@ -201,6 +209,7 @@ const ProductScreen = () => {
                         ></Form.Control>
                       </Form.Group>
                       <Button
+                        className='my-2'
                         disabled={loadingProductReview}
                         type='submit'
                         variant='primary'
